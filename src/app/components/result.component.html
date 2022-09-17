@@ -1,0 +1,9 @@
+<h3>Search result below:</h3>
+
+<div *ngIf="images.length <= 0">
+    <h4>No search result!</h4>
+</div>
+
+<div *ngFor="let i of images;" class="picture">
+    <img [src]="i">
+</div>
